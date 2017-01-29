@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Billing info</title>
+		<meta charset="utf-8">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="x-rim-auto-match" content="none">
+	    <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	    <script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+	</head>
+	<body>
+		<div class="content">
+
+			<div class="head">
+				<h1 class="main_title">Billing Info</h1>
+				<p class="detail_text">Choose a payment option below and fill out the appropriate information</p>
+			</div>
+
+			<div class="tabs_wrap">
+					<input type="radio" name="control" class="hidden tab_control" id="tab_cont1" checked="checked">
+					<input type="radio" name="control" class="hidden tab_control" id="tab_cont2">
+					<input type="radio" name="control" class="hidden tab_control" id="tab_cont3">
+
+				<div class="tabs_block">
+					<label class="tab_block" for="tab_cont1" id="tab1"><i class="icon_tab credit"></i><span>Credit Card</span></label>
+					<label class="tab_block" for="tab_cont2" id="tab2"><i class="icon_tab gift"></i><span>Gift Card</span></label>
+					<label class="tab_block" for="tab_cont3" id="tab3"><i class="icon_tab paypal"></i><span>PayPal</span></label>
+				</div>
+
+				<div class="tabs_content">
+					<div class="tab_content hidden" id="tab_content1">
+						<div class="form_credit-card">
+							<form>
+								<div class="middle_block">
+									<h3 class="form_title"><span>1</span>Billing Address</h3>
+									<div class="row">
+										<label class="classic_lab" for="fld_name">Full name</label>
+										<input type="text" name="Full name" class="classic_inp" required id="fld_name">
+									</div>
+									<div class="row">
+										<label class="classic_lab" for="fld_address1">Address1</label>
+										<input type="text" name="Address1" class="classic_inp" required id="fld_address1">
+									</div>
+									<div class="row">
+										<label class="classic_lab" for="fld_address2">Address2</label>
+										<input type="text" name="Address2" class="classic_inp" required id="fld_address2">
+									</div>
+								</div>
+								<div class="middle_block">
+								<h3 class="form_title"><span>2</span>Credit Card Info</h3>
+									<div class="row">
+										<label class="classic_lab" for="fld_name_on_card">Name on card</label>
+										<input type="text" name="Name on card" class="classic_inp" required id="fld_name_on_card">
+									</div>
+									<div class="row card_numb">
+										<label class="classic_lab" for="fld_card_num">Card number</label>
+										<input type="text" name="Card number" class="classic_inp" id="fld_card_num" placeholder="0000-0000-0000-0000" required>
+									</div>
+									<div class="row">
+										<div class="row_three r_t1">
+											<label class="classic_lab" for="fld_cvv">Cvv number</label>
+											<input type="text" name="Cvv number" class="classic_inp" placeholder="CVV" required id="fld_cvv">
+											<div class="tooltip">
+												<div class="tool_text">The CVV Number ("Card Verification Value") on your credit card or debit card is a 3 digit number on VISA®, MasterCard® and Discover® branded credit and debit cards.</div>
+											</div>
+										</div>
+										<div class="row_three r_t2">
+											<label class="classic_lab" for="fld_exp_month">Exp. month</label>
+											<select class="classic_inp classic_select" required name="Exp. month" id="fld_exp_month">
+												<option disabled selected hidden value="">Month</option>
+												<option value="1">January</option>
+												<option value="2">February</option>
+												<option value="3">March</option>
+												<option value="4">April</option>
+												<option value="5">May</option>
+												<option value="6">June</option>
+												<option value="7">July</option>
+												<option value="8">August</option>
+												<option value="9">September</option>
+												<option value="10">October</option>
+												<option value="11">November</option>
+												<option value="12">December</option>
+											</select>
+										</div>
+										<div class="row_three r_t2">
+											<label class="classic_lab" for="fld_exp_day">Exp. day</label>
+											<select class="classic_inp classic_select" required name="Exp. day" id="fld_exp_day">
+												<option disabled selected hidden value="">Year</option>
+												<option value="1">2017</option>
+												<option value="2">2018</option>
+												<option value="3">2019</option>
+												<option value="4">2020</option>
+												<option value="5">2021</option>
+												<option value="6">2022</option>
+												<option value="7">2023</option>
+												<option value="8">2024</option>
+												<option value="9">2025</option>
+												<option value="10">2026</option>
+												<option value="11">2027</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab_content hidden" id="tab_content2">
+						<p>Gift Card</p>
+					</div>
+					<div class="tab_content hidden" id="tab_content3">
+						<p>PayPal</p>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
